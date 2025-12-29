@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  mens-cart:
+    build: .
+    container_name: mens_dress_cart
+    ports:
+      - "8080:80"
+    restart: always
