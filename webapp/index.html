@@ -2,39 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Men's Dress Store</title>
+    <title>MenStyle | Men's Fashion Store</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <h1>Men's Dress Store</h1>
-    <p>Premium Fashion for Men</p>
-</header>
 
-<section class="products">
-    <div class="product">
-        <h3>Formal Shirt</h3>
-        <p>₹999</p>
-        <button onclick="addToCart('Formal Shirt', 999)">Add to Cart</button>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">👔 MenStyle</div>
+    <ul class="nav-links">
+        <li>Home</li>
+        <li>Login</li>
+        <li>Register</li>
+        <li>Cart</li>
+    </ul>
+    <div class="search-box">
+        <input type="text" placeholder="Search brand">
+        <button>Search</button>
     </div>
-    <div class="product">
-        <h3>Casual T-Shirt</h3>
-        <p>₹699</p>
-        <button onclick="addToCart('Casual T-Shirt', 699)">Add to Cart</button>
-    </div>
-    <div class="product">
-        <h3>Denim Jeans</h3>
-        <p>₹1499</p>
-        <button onclick="addToCart('Denim Jeans', 1499)">Add to Cart</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Experience Premium Men's Fashion</h1>
+    <p>Style • Comfort • Confidence</p>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+    <h2>🔥 Dress Categories</h2>
+
+    <div class="category-cards">
+        <div class="card">
+            <img src="https://images.jdmagicbox.com/quickquotes/images_main/formal-wear-for-men-sesvbeic.jpg" alt="Formal Wear">
+            <h3>Formal Wear</h3>
+            <p>Office • Meetings • Events</p>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2024/NOVEMBER/5/FgJa0MZ0_49af43d9a0c34532b92fa7da06d1a95d.jpg" alt="Casual Wear">
+            <h3>Casual Wear</h3>
+            <p>Everyday • Trendy • Comfort</p>
+        </div>
+
+        <div class="card">
+            <img src="https://assets0.mirraw.com/images/13377740/image_original_long_webp.webp?1751710887" alt="Ethnic Wear">
+            <h3>Ethnic Wear</h3>
+            <p>Festive • Traditional • Elegant</p>
+        </div>
     </div>
 </section>
 
+<!-- PRODUCTS -->
+<section class="products">
+    <h2>🛒 Trending Products</h2>
+
+    <div class="product-grid">
+        <div class="product">
+            <h3>Formal Shirt</h3>
+            <p>₹999</p>
+            <button onclick="addToCart('Formal Shirt', 999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Casual T-Shirt</h3>
+            <p>₹699</p>
+            <button onclick="addToCart('Casual T-Shirt', 699)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Denim Jeans</h3>
+            <p>₹1499</p>
+            <button onclick="addToCart('Denim Jeans', 1499)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Kurta Set</h3>
+            <p>₹1999</p>
+            <button onclick="addToCart('Kurta Set', 1999)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- CART -->
 <section class="cart">
-    <h2>Shopping Cart</h2>
+    <h2>🛒 Shopping Cart</h2>
     <ul id="cart-items"></ul>
     <h3>Total: ₹<span id="total">0</span></h3>
 </section>
 
-<script src="js/cart.js"></script>
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 MenStyle Fashion | Dockerized with Nginx</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
